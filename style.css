@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #2b2c2c;
+  color: white;
+  /* font-family: "Abel", sans-serif; */
+  font-family: "Quicksand", sans-serif;
+}
+.name {
+  color: yellow;
+}
+.right img {
+  width: 30vw;
+}
+.intro {
+  padding: 12vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* height: 80vh; */
+  gap: 4vw;
+}
+.left h1 {
+  font-size: 4vw;
+  letter-spacing: 2px;
+}
+.left h2 {
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+.btn {
+  background-color: #2b2c2c;
+  border: 2px solid yellow;
+  width: 100px;
+  height: 30px;
+  color: yellow;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0;
+}
+.btn a {
+  color: yellow;
+  text-decoration: none;
+}
+.aboutMe {
+  height: 50vh;
+  background-color: #303131;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10vw;
+}
+.content {
+  width: 500px;
+}
+/* .aboutHeading {
+  width: 500px;
+} */
+.aboutHeading h1 {
+  font-size: 3.5vw;
+}
+.education {
+  padding-top: 50px;
+  margin-top: 20px;
+  text-align: center;
+  height: 50vh;
+  background-color: #303131;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.details p {
+  opacity: 0.5;
+  margin: 10px 0;
+}
+.details {
+  width: 350px;
+  text-align: start;
+  padding: 15px;
+  border: 1.5px solid white;
+}
+.institutes {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.skills {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.skill img {
+  height: 50px;
+  margin-bottom: 10px;
+}
+.skill {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.part3 {
+  padding: 20px 0;
+  text-align: center;
+}
+.projects {
+  padding: 30px 15vw;
+  text-align: center;
+  background-color: #303131;
+}
+.details div {
+  margin: 13px 0;
+}
+.details a {
+  color: yellow;
+  text-decoration: none;
+  border: 1px solid yellow;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 13px;
+  margin-right: 5px;
+}
+.projectList {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.experience {
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.experience h1 {
+  margin: 20px 0;
+}
+.work {
+  width: 50vw;
+}
+.contactMe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+.contactInfo {
+  display: flex;
+  width: 70vw;
+  justify-content: space-evenly;
+  margin: 44px;
+  line-height: 24px;
+}
+.social img {
+  height: 30px;
+  margin: 0 5px;
+}
+
+@media (max-width: 600px) {
+  .intro {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .right img {
+    width: 50vw;
+  }
+  .left h1 {
+    font-size: 25px;
+  }
+  .aboutMe {
+    flex-direction: column;
+    height: auto;
+  }
+  .content {
+    width: 100%;
+  }
+  .institutes {
+    flex-direction: column;
+  }
+  .education {
+    height: 75vh;
+  }
+  .aboutHeading h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+  .work {
+    width: 85%;
+  }
+  .projects {
+    padding: 30px 6vw;
+  }
+  .left {
+    width: 100%;
+  }
+  .contactMe {
+    padding: 20px;
+  }
+  .contactInfo {
+    margin: 0;
+    width: 100%;
+    font-size: 12px;
+    margin-top: 20px;
+  }
+  .left h2 {
+    font-size: 15px;
+  }
+}
