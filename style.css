@@ -101,7 +101,7 @@ body {
   font-size: 3.5vw;
 }
 .education {
-  padding-top: 50px;
+  padding: 50px;
   margin-top: 20px;
   text-align: center;
   height: 50vh;
@@ -118,7 +118,8 @@ body {
   width: 350px;
   text-align: start;
   padding: 15px;
-  border: 1.5px solid white;
+  border: 1.5px solid #4b4b4b;
+  background-color: #2b2c2c;
 }
 .institutes {
   display: flex;
@@ -148,7 +149,7 @@ body {
 }
 
 .part3 {
-  padding: 20px 0;
+  padding: 40px 0;
   text-align: center;
 }
 .projects {
@@ -203,6 +204,23 @@ body {
   height: 30px;
   margin: 0 5px;
 }
+.demo {
+  position: relative;
+}
+.tooltip h4 {
+  text-align: center;
+  margin-bottom: 5px;
+  color: yellow;
+}
+.tooltip ::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  border: 15px solid;
+  border-color: #000 #0000 #0000 #0000;
+}
 
 @media (max-width: 600px) {
   .intro {
@@ -229,7 +247,7 @@ body {
     flex-direction: column;
   }
   .education {
-    height: 75vh;
+    height: auto;
   }
   .aboutHeading h1 {
     font-size: 40px;
