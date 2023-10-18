@@ -10,9 +10,18 @@
 <body>
     <div>
         <nav class="Navbar">
-            <div class="logo"><a class="logo">Anil.dev</a></div>
+            <ul>
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
         </nav>
-        <div class="intro">
+        <div class="intro" id="intro" >
             <div class="left">
                 <h1>I'm <span class="name">Anil Kokkul</span></h1>
             <h2><span class="typeInput"></span></h2>
@@ -23,7 +32,7 @@
                 <img src="web2.png" alt="Profile Picture"/>
             </div>
         </div>
-        <div class="aboutMe">
+        <div class="aboutMe" id="about">
             <div class="aboutHeading">
                 <h1>About Me</h1>
             </div>
@@ -34,9 +43,9 @@
                 <button class="btn"><a href="https://github.com/Anilkokkul  " target="_blank" >View works</a></button>
             </div>
         </div>
-        <div class="part3">
+        <div class="part3" id="skills">
             <h1>Skills</h1>
-            <div class="skills">
+            <div class="skills" >
                 <div class="skill">
                     <img src="HTML.png" alt="HTML" srcset="">
                     <h3>HTML</h3>
@@ -72,7 +81,7 @@
                
             </div>
         </div>
-        <div class="projects">
+        <div class="projects" id="projects">
             <h1>Projects</h1>
             <div class="projectList">
                 <div class="details">
@@ -108,7 +117,7 @@
                 
             </div>
         </div>
-        <div class="experience">
+        <div class="experience" id="experience">
             <h1>Work Experience</h1>
             <div class="details work">
                 <p>July 2018 - May 2023</p>
@@ -117,24 +126,30 @@
                 <span>To effectively manage the team in achieving daily targets set by the client, I take the lead in addressing any challenges that arise during our data-related tasks and provide guidance to the team. Additionally, I ensure timely resolution of Query, Request & Complaints raised by customers by actively following up with the service team, thereby maintaining a high level of customer satisfaction and operational efficiency</span>
             </div>
         </div>
-        <div class="education">
+        <div class="education" id="education">
             <h1>Education</h1>
             <div class="institutes">
+                <div class="details">
+                    <p>July 2023 - present</p>
+                    <div><b>Bacheler of Computer application</b></div>
+                    <p>SES Polytechnic, Solapur</p>
+                    <span>Corrently I am pursuing a 3 year Bacheler of Computer Application in Uttaranchal University of Online education </span>
+                </div>
                 <div class="details">
                     <p>June 2015 - June 2017</p>
                     <div><b>Diploma in Mechanical Engineering</b></div>
                     <p>SES Polytechnic, Solapur</p>
-                    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, sint!</span>
+                    <span>Completed my diploma in first class</span>
                 </div>
                 <div class="details">
                     <p>June 2013 - Feb 2015</p>
                     <div><b>HSC / Class 12th</b></div>
                     <p>Kuchan Jr College, Solapur</p>
-                    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, sint!</span>
+                    <span>Completed my HSC in first class</span>
                 </div>
             </div>
         </div>
-        <div class="contactMe">
+        <div class="contactMe" id="contact">
             <h1>Contact Me</h1>
             <div class="contactInfo">
                 <div>
@@ -156,6 +171,7 @@
                 </div>
             </div>
     </div>
+    <script src="script.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('.typeInput', {
