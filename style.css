@@ -12,11 +12,11 @@ html {
 body {
   background-color: #2b2c2c;
   color: white;
-  /* font-family: "Abel", sans-serif; */
-  font-family: "Quicksand", sans-serif;
+  font-family: "gilroy";
+  letter-spacing: 1px;
+  font-size: 1rem;
 }
 .Navbar {
-  position: fixed;
   width: 100vw;
   display: flex;
   height: 50px;
