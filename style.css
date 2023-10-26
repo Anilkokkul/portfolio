@@ -13,7 +13,7 @@ body {
   background-color: #2b2c2c;
   color: white;
   font-family: "gilroy";
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   font-size: 1rem;
 }
 .Navbar {
@@ -207,19 +207,8 @@ body {
 .demo {
   position: relative;
 }
-.tooltip h4 {
-  text-align: center;
-  margin-bottom: 5px;
-  color: yellow;
-}
-.tooltip ::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 100%;
-  transform: translateX(-50%);
-  border: 15px solid;
-  border-color: #000 #0000 #0000 #0000;
+.bg {
+  background-color: #303131;
 }
 
 @media (max-width: 600px) {
@@ -265,6 +254,11 @@ body {
   .contactMe {
     padding: 20px;
   }
+  .contactInfo > a {
+    text-decoration: none;
+    color: white;
+  }
+
   .contactInfo {
     margin: 0;
     width: 100%;
