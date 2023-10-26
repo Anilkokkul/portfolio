@@ -210,7 +210,10 @@ body {
 .bg {
   background-color: #303131;
 }
-
+.email {
+  text-decoration: none;
+  color: white;
+}
 @media (max-width: 600px) {
   .intro {
     flex-direction: column-reverse;
@@ -254,11 +257,6 @@ body {
   .contactMe {
     padding: 20px;
   }
-  .contactInfo > a {
-    text-decoration: none;
-    color: white;
-  }
-
   .contactInfo {
     margin: 0;
     width: 100%;
