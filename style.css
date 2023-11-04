@@ -83,14 +83,23 @@ body {
   color: yellow;
   text-decoration: none;
 }
-.aboutMe {
+/* .aboutMe {
   height: 50vh;
   background-color: #303131;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 10vw;
+} */
+.aboutMe {
+  height: max-content;
+  background-color: #303131;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8vw 13vw;
 }
+
 .content {
   width: 500px;
 }
@@ -149,11 +158,11 @@ body {
 }
 
 .part3 {
-  padding: 40px 0;
+  padding: 5vw 0;
   text-align: center;
 }
 .projects {
-  padding: 30px 15vw;
+  padding: 5vw 15vw;
   text-align: center;
   background-color: #303131;
 }
@@ -285,7 +294,7 @@ body {
     align-items: center;
   }
   .education {
-    height: 60vh;
+    height: 100vh;
   }
   .details {
     width: 90%;
