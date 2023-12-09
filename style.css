@@ -196,7 +196,7 @@ body {
 }
 .work {
   margin-top: 40px;
-  width: 50vw;
+  max-width: 59vw;
 }
 .contactMe {
   display: flex;
@@ -235,6 +235,10 @@ body {
   }
   .institute {
     width: 100%;
+  }
+  .work {
+    margin-top: 40px;
+    max-width: 100%;
   }
   .Navbar ul li a {
     font-size: 3vw;
