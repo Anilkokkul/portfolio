@@ -12,7 +12,7 @@ html {
 body {
   background-color: #2b2c2c;
   color: white;
-  font-family: "gilroy";
+  font-family: "Gilroy";
   letter-spacing: 0.5px;
   font-size: 1rem;
 }
@@ -83,14 +83,6 @@ body {
   color: yellow;
   text-decoration: none;
 }
-/* .aboutMe {
-  height: 50vh;
-  background-color: #303131;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 10vw;
-} */
 .aboutMe {
   height: max-content;
   background-color: #303131;
@@ -108,12 +100,15 @@ body {
 } */
 .aboutHeading h1 {
   font-size: 3.5vw;
+  width: max-content;
+  margin: auto;
+  border-bottom: 2px solid yellow;
 }
 .education {
   padding: 50px;
   margin-top: 20px;
   text-align: center;
-  height: 50vh;
+  min-height: 40vh;
   background-color: #303131;
   display: flex;
   flex-direction: column;
@@ -124,7 +119,7 @@ body {
   margin: 10px 0;
 }
 .details {
-  width: 350px;
+  max-width: 450px;
   text-align: start;
   padding: 15px;
   border: 1.5px solid #4b4b4b;
@@ -134,7 +129,7 @@ body {
   display: flex;
   align-content: center;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 .skills {
   margin-top: 40px;
@@ -157,12 +152,18 @@ body {
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
-.part3 {
+.Skill {
   padding: 5vw 0;
   text-align: center;
 }
+.Skill h1 {
+  width: max-content;
+  margin: auto;
+  border-bottom: 2px solid yellow;
+}
+
 .projects {
-  padding: 5vw 15vw;
+  padding: 5vw 10vw;
   text-align: center;
   background-color: #303131;
 }
@@ -179,7 +180,7 @@ body {
   margin-right: 5px;
 }
 .projectList {
-  margin-top: 20px;
+  margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -191,9 +192,10 @@ body {
   align-items: center;
 }
 .experience h1 {
-  margin: 20px 0;
+  margin: 0;
 }
 .work {
+  margin-top: 40px;
   width: 50vw;
 }
 .contactMe {
@@ -211,13 +213,16 @@ body {
 }
 .social img {
   height: 30px;
-  margin: 0 5px;
+  margin-right: 10px;
 }
 .demo {
   position: relative;
 }
 .bg {
   background-color: #303131;
+}
+.institute {
+  width: 33%;
 }
 .email {
   text-decoration: none;
@@ -227,6 +232,9 @@ body {
   .intro {
     flex-direction: column-reverse;
     gap: 20px;
+  }
+  .institute {
+    width: 100%;
   }
   .Navbar ul li a {
     font-size: 3vw;
@@ -244,15 +252,19 @@ body {
   .content {
     width: 100%;
   }
+  .content > p {
+    font-size: medium !important;
+  }
   .institutes {
     flex-direction: column;
   }
   .education {
-    height: auto;
+    min-height: 50vh;
+    padding: 50px 23px;
   }
   .aboutHeading h1 {
-    font-size: 40px;
-    margin-bottom: 15px;
+    font-size: 8vw;
+    margin-bottom: 25px;
   }
   .work {
     width: 85%;
@@ -278,14 +290,18 @@ body {
   .btn {
     background-color: #2b2c2c;
     border: 2px solid yellow;
-    width: 59px;
-    height: 21px;
+    width: 75px;
+    height: 24px;
     color: yellow;
     border-radius: 12px;
     font-weight: 600;
     cursor: pointer;
     padding: 0;
     font-size: 10px;
+  }
+  .social img {
+    height: 20px;
+    margin-right: 5px;
   }
 }
 @media (max-width: 820px) and (min-width: 600px) {
@@ -294,7 +310,7 @@ body {
     align-items: center;
   }
   .education {
-    height: 100vh;
+    min-height: 100vh;
   }
   .details {
     width: 90%;

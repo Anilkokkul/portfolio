@@ -25,8 +25,16 @@ document.querySelector(".experience-link").addEventListener("click", () => {
 });
 
 document.querySelector(".education-link").addEventListener("click", () => {
+  console.log("Clicked");
   educationSection.scrollIntoView({ behavior: "smooth" });
 });
 document.querySelector(".contact-link").addEventListener("click", () => {
   contactSection.scrollIntoView({ behavior: "smooth" });
+});
+
+var typed = new Typed(".typeInput", {
+  strings: ["Full Stack Web Developer "],
+  typeSpeed: 70,
+  smartBackspace: true,
+  loop: true,
 });
