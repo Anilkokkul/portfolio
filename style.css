@@ -5,32 +5,45 @@
   padding: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: "MyFont";
+  src: url("/BrandinkSans.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 html {
   scroll-behavior: smooth;
+}
+
+.active {
+  color: yellow;
 }
 
 body {
   background-color: #2b2c2c;
   color: white;
-  font-family: "Gilroy";
+  font-family: Gilroy;
   letter-spacing: 0.5px;
   font-size: 1rem;
 }
 .Navbar {
+  position: fixed;
   width: 100vw;
   display: flex;
   height: 50px;
   align-items: center;
-  justify-content: center;
-  padding: 10px 15vw;
+  justify-content: flex-end;
+  padding: 10px 5vw;
+  height: 70px;
   background-color: #151515;
 }
 
 .Navbar ul {
   display: flex;
-  gap: 5px;
+  gap: 39px;
   width: 100%;
-  justify-content: space-evenly;
+  font-size: 1.29vw;
+  justify-content: flex-end;
 }
 .Navbar ul li {
   list-style: none;
@@ -95,9 +108,6 @@ body {
 .content {
   width: 500px;
 }
-/* .aboutHeading {
-  width: 500px;
-} */
 .aboutHeading h1 {
   font-size: 3.5vw;
 }
@@ -159,7 +169,7 @@ body {
   text-align: center;
   background-color: #303131;
 }
-.title{
+.title {
   width: max-content;
   margin: auto;
   border-bottom: 2px solid yellow;
@@ -189,10 +199,9 @@ body {
   align-items: center;
 }
 .experience h1 {
-  margin: 0;
+  margin-bottom: 40px;
 }
 .work {
-  margin-top: 40px;
   max-width: 50vw;
 }
 .contactMe {
@@ -226,6 +235,9 @@ body {
   color: white;
 }
 @media (max-width: 600px) {
+  .Navbar ul {
+    gap: 5px;
+  }
   .intro {
     flex-direction: column-reverse;
     gap: 20px;
@@ -234,7 +246,6 @@ body {
     width: 100%;
   }
   .work {
-    margin-top: 40px;
     max-width: 100%;
   }
   .Navbar ul li a {
