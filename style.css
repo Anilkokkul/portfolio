@@ -320,6 +320,9 @@ body {
     height: 20px;
     margin-right: 5px;
   }
+  .section {
+    padding-top: 70px;
+  }
 }
 @media (max-width: 820px) and (min-width: 600px) {
   .institutes {
