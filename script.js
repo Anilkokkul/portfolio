@@ -11,9 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     link.addEventListener("click", function (event) {
       event.preventDefault();
       const targetSectionId = link.getAttribute("href").substring(1);
-      console.log(targetSectionId);
       const targetSection = document.getElementById(targetSectionId);
-      console.log(targetSection);
       scrollToSection(targetSection);
     });
   });
