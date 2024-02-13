@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   navbarLinks.forEach((link) => {
-    console.log(link);
     link.addEventListener("click", function (event) {
       event.preventDefault();
       const targetSectionId = link.getAttribute("href").substring(1);
