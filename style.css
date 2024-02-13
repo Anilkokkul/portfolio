@@ -300,6 +300,9 @@ body {
   .navbar-links {
     display: none;
   }
+  .Navbar {
+    position: relative;
+  }
   .Navbar ul {
     gap: 5px;
   }
