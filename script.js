@@ -38,8 +38,8 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 var typed = new Typed(".typeInput", {
-  strings: ["Full Stack Web Developer "],
-  typeSpeed: 70,
+  strings: ["Full Stack Web Developer","NodeJs Developer","ReactJs Developer"],
+  typeSpeed: 50,
   smartBackspace: true,
   loop: true,
 });
